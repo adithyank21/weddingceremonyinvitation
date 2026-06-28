@@ -587,18 +587,69 @@ body::before {
 @media (max-width: 640px) {
   .invitation {
     width: min(100% - 1rem, 100%);
-    padding-top: 2.5rem;
+    padding: 2.5rem 0 2rem;
   }
 
   .entrance-content {
     padding: 1rem;
   }
 
+  .hero-card {
+    padding: 2rem 1.25rem 1.6rem;
+  }
+
+  .hero-card::before {
+    width: 260px;
+    top: -90px;
+  }
+
+  .hero-name-group {
+    gap: 0.7rem;
+  }
+
+  .hero-name,
+  .hero-and {
+    white-space: normal;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 7vw, 3rem);
+  }
+
+  .hero-and {
+    font-size: 2.1rem;
+    letter-spacing: 0.2em;
+    margin: 0;
+  }
+
+  .banner {
+    grid-template-columns: 1fr;
+  }
+
+  .banner-text {
+    padding: 0.5rem 0;
+  }
+
+  .location-card,
+  .countdown-card {
+    padding: 1.3rem;
+  }
+
   .countdown-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .hero-copy h1 {
-    font-size: 2.6rem;
+  .countdown-grid div {
+    padding: 0.85rem 0.6rem;
+  }
+
+  .cta-row {
+    gap: 0.6rem;
+  }
+
+  .music-toggle {
+    right: 0.8rem;
+    bottom: 5.5rem;
+    padding: 0.7rem 0.85rem;
   }
 }
